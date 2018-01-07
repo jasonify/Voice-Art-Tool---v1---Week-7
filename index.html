@@ -1,0 +1,54 @@
+<html>
+<head>
+  <style>
+  body, html, canvas{
+    margin: 0;
+    paddign: 0;
+  }
+  body {
+    background: cyan;
+  }
+  .pallete {
+    opacity: 0.8;
+  }
+  .status {
+    position: absolute;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    height: 30px;
+    background: white;
+    padding: 10px;
+    opacity: 0.7;
+  }
+
+  .tools-pallete {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 200px;
+    background: white;
+    padding: 10px;
+  }
+
+  </style>
+</head>
+<body>
+  <canvas id = "canvas">
+  </canvas>
+  <div class="status pallete">
+    Waiting for command :)
+  </div>
+  <div class='tools-pallete pallete'>
+    Commands:
+    <br />
+    start, stop, clear, circle, square
+    <div class='layers'>
+    </div>
+  </div>
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="lodash.js"></script>
+  <script src = "main.js"></script>
+</body>
+</html>
